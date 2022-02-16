@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body {
+  font-family: 'Proxima Nova' !important;
+}
+
 /* Menu Styling */
 #menu__toggle {
   opacity: 0;
@@ -85,6 +89,7 @@
   font-weight: 700;
   text-decoration: none;
   text-align: center;
+  text-transform: uppercase;
   transition-duration: .25s;
 }
 .menu__item:hover {
