@@ -19,16 +19,20 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/4b4a19b3c4.js" crossorigin="anonymous"></script>
 
     <!-- LESS css -->
     <link rel="stylesheet/less" type="text/css" href="css/styles.less" />
     <link rel="stylesheet" href="css/styles.css">
 
   </head>
+
   <body>
     <header>
       <div>
-        <!-- Linked Home Logo -->
+        <!-- Linked Home Logo ---------------------------------->
         <a href="/vendors-flstatefair/">
           <img src="assets/flstatefair-logo.png" alt="Florida State Fair" height="60px">
         </a>
@@ -41,8 +45,8 @@
           </label>
         
           <ul class="menu__box">
-            <li><a class="menu__item" href="apply.html">Apply Now</a></li>
-            <li><a class="menu__item" href="renew.html">Renew</a></li>
+            <!-- <li><a class="menu__item locked" href="apply.html">Apply Now</i></a></li> -->
+            <li><a class="menu__item" href="renew.html">Renew Now</a></li>
             <li><a class="menu__item" href="guide.html">Guide Book</a></li>
             <li><a class="menu__item" href="explore.html">Explore</a></li>
             <li><a class="menu__item" href="faq.html">Questions?</a></li>
@@ -50,20 +54,23 @@
         </div>
       </div>
     </header>
+
+    <!-- Page Content Start ---------------------------------->
     <main>
       <section class="hero hero-home d-flex justify-content-center align-items-center">
         <div class="container hero-content">
           <h1 class="text-center">Vendors</h1>
-          <!-- <p class="text-center">February 9-20, 2023</p> -->
         </div>
       </section>
 
+      <!-- Apply Now CTA Section ---------------------------------->
       <section class="container content-basic d-flex flex-column justify-content-center align-items-center">
         <h2 class="text-center">Apply Now for 2023</h2>
-        <p class="text-center">Interested in renewing your leased space or applying for the next sunshine state celebration? Plan to join us for next yearat the Florida State Fair, February 9-20, 2023.</p>
+        <p class="text-center">Interested in renewing your licensed space or applying for the next sunshine state celebration? Plan to join us for next yearat the Florida State Fair, February 9-20, 2023.</p>
         <a href="/vendors-flstatefair/renew.html"><button type="button" class="btn btn-outline-primary my-3">Renew Now</button></a>
       </section>
 
+      <!-- Rules CTA Section ---------------------------------->
       <section class="content-fw royal-teal">
         <div class="container content-basic">
           <h2>Rules & Guides</h2>
@@ -72,6 +79,7 @@
         </div>
       </section>
       
+      <!-- Vendor Location Section ---------------------------------->
       <section class="container my-5">
         <h2 class="text-center">Vendor Locations</h2>
           <div class="container content-img-grid content-basic d-flex flex-row flex-wrap">
@@ -90,21 +98,31 @@
 
             <div class="container img_title">
               <img src="assets/vnd-expo.jpg" alt="Indoor Retail">
-              <h3 class="img_title_text">Indoor Retail</h3>
+              <h3 class="img_title_text">Outdoor Retail</h3>
               <p class="text-center">Premium location for exhibiton space, retail or Lorem ipsum, dolor sit amet consectetur
                 adipisicing elit. Nam est dolore reiciendis.</p>
             </div>
 
             <div class="container img_title">
               <img src="assets/vnd-expo.jpg" alt="Outdoor Retail">
-              <h3 class="img_title_text">Outdoor Retail</h3>
+              <h3 class="img_title_text">Outdoor Concessions</h3>
               <p class="text-center">Premium location for exhibiton space, retail or Lorem ipsum, dolor sit amet consectetur
                 adipisicing elit. Nam est dolore reiciendis.</p>
             </div>
           </div>
       </section>
 
-      <section class="container faq my-5">
+      <!-- Marketing Deals Section ---------------------------------->
+      <section class="content-fw yellow">
+        <div class="container content-basic">
+          <h2>Deals & Promo Offers</h2>
+          <p>The Florida State Fair Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro quam molestias alias. Nisi sint architecto quasi velit nihil vero commodi molestiae voluptas, repellat aliquid. Possimus delectus est quod eum placeat.</p>
+          <a href="/vendors-flstatefair/guides.html"><button type="button" class="btn btn-outline-primary btn-white my-3">Learn More</button></a>
+        </div>
+      </section>
+
+      <!-- FAQ Section ---------------------------------->
+      <section class="container faq">
         <h2 class="text-center m-3">Frequently Asked Questions</h2>
         <div class="accordion" id="accordionBasic">
           <div class="accordion-item">
@@ -136,8 +154,7 @@
               <div class="accordion-body">
                 Pricing for the 2022 Florida State Fair can be found by clicking on the link below.
       
-                <a href="https://floridastatefair.com/wp-content/uploads/2021/08/Vendor-Pricing-2021.pdf" target="_blank">View
-                  Pricing</a>
+                <a href="https://floridastatefair.com/wp-content/uploads/2021/08/Vendor-Pricing-2021.pdf" target="_blank">View Pricing</a>
       
               </div>
             </div>
