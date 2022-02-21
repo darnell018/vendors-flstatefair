@@ -37,6 +37,105 @@ header {
   }
 }
 
+// Menu
+  #menu__toggle {
+  opacity: 0;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  right: 0;
+}
+
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 16px;
+  right: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transition-duration: .25s;
+}
+
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  right: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #20639b;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  transition-duration: .25s;
+}
+
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #fff;
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  transition-duration: .25s;
+}
+.menu__item:hover {
+  background-color: #163f5f;
+}
+
+.menu__box a:hover {
+  color: #fff;
+}
+
+.hamburger-menu {
+    height: 0;
+}
+
+// Menu END
+
 .hero {
   background-size: cover;
   background-position: center;
@@ -152,20 +251,26 @@ header {
 
 .faq {
   max-width: 800px;
-  margin: 5rem auto 8rem;
+  margin: 10rem auto 14rem;
 
   button.accordion-button {
     background-color: @royal;
     color: @white;
   }
 
+  .accordion {
+    text-align: center;
+  }
+
   .accordion-item {
     border: none !important;
     border-radius: none !important;
+    text-align: left;
   }
 
   .accordion-button {
     margin: 2px;
+    position: static;
   }
 
   .accordion-body {
@@ -178,7 +283,7 @@ header {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
-}
+  }
 
   .accordion-button:not(.collapsed)::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
@@ -189,6 +294,9 @@ header {
   }
 }
 
+.faq-pg {
+  margin: 5rem auto 3rem;
+}
 
 
 footer {
@@ -209,3 +317,31 @@ footer {
   }
 }
 
+
+@media (min-width: 725px) {
+
+  .hero h1 {
+    font-size: 5rem;
+  }
+
+  .content-basic {
+    padding: 7rem;
+  }
+
+  .content-img-grid {
+    padding: 1rem 3rem 3rem;
+  }
+
+  .faq {
+    padding: 0 5rem;
+  }
+
+  
+}
+
+
+@media (min-width: 1025px) {
+  .hero {
+    height: 55vh;
+  }
+}

@@ -25,12 +25,23 @@
   <link rel="stylesheet/less" type="text/css" href="css/styles.less" />
   <link rel="stylesheet" href="css/styles.css">
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N3Z6SSBQM9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-N3Z6SSBQM9');
+  </script>
+
 </head>
 
 <body>
   <header>
     <div>
-      <a href="/vendors-flstatefair/">
+      <!-- Linked Home Logo ---------------------------------->
+      <a href="/">
         <img src="assets/flstatefair-logo.png" alt="Florida State Fair" height="60px">
       </a>
     </div>
@@ -40,11 +51,11 @@
         <label class="menu__btn" for="menu__toggle">
           <span></span>
         </label>
-
+  
         <ul class="menu__box">
-          <li><a class="menu__item" href="apply.html">Apply Now</a></li>
-          <li><a class="menu__item" href="renew.html">Renew</a></li>
-          <li><a class="menu__item" href="guide.html">Guide</a></li>
+          <!-- <li><a class="menu__item locked" href="apply.html">Apply Now</i></a></li> -->
+          <li><a class="menu__item" href="renew.html">Renew Now</a></li>
+          <li><a class="menu__item" href="guide.html">Guide Book</a></li>
           <li><a class="menu__item" href="explore.html">Explore</a></li>
           <li><a class="menu__item" href="faq.html">Questions?</a></li>
         </ul>

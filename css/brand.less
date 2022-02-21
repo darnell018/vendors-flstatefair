@@ -4,6 +4,8 @@
 @yellow: #f5d87d;
 @mango: #FC814A;
 @fire: #BB0A21;
+@green: #357b4e;
+@mint: #5ebe78;
 @white: #ffffff;
 @black: #333333;
 @silver: #9FA4A9;
@@ -12,17 +14,22 @@
 // Brand Fonts Proxima Nova Regular
 @font-main: proxima-nova, sans-serif;
 
+.top {
+	position: relative;
+	height: 10px;
+	background: linear-gradient(45deg, #20639b, #52cfe6);
+}
 
 // Buttons
 .btn-outline-primary {
-    color: @royal;
-    border-color: @royal;
+    color: @navy;
+    border-color: @navy;
 }
 
   .btn-outline-primary:hover {
       color: #fff;
-      background-color: @royal;
-      border-color: @royal;
+      background-color: @navy;
+      border-color: @navy;
   }
 
 .btn-white {
@@ -30,14 +37,22 @@
   border-color: @white;
 }
 
+.btn-navy {
+  color: @navy;
+  border-color: @navy;
+}
+
+.btn-navy:hover {
+  background-color: @navy;
+  border-color: @navy;
+}
+
 
 //Backgrounds
 .royal {
   background-color: @royal;
-  h3 {
-    color: @white !important;
-    text-align: center;
-  }
+  color: @white !important;
+  text-align: center;
 }
 
 .navy {
@@ -48,12 +63,24 @@
 
 .yellow {
   background-color: @yellow;
-  color: @white !important;
+  color: @navy !important;
   text-align: center;
 }
 
 .mango {
   background-color: @mango;
+  color: @white !important;
+  text-align: center;
+}
+
+.green {
+  background-color: @green;
+  color: @white !important;
+  text-align: center;
+}
+
+.mint {
+  background-color: @mint;
   color: @white !important;
   text-align: center;
 }
